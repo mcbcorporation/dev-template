@@ -1,0 +1,13 @@
+{
+  "tool": {
+    "name": "",
+    "companies": [],
+    "category": "",
+    "description": "",
+    "owner": { "name": "", "role": "" },
+    "url": "",
+    "status": "in-development",
+    "progressPercent": 0
+  },
+  "connectsTo": []
+}
