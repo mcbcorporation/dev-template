@@ -1,0 +1,27 @@
+{
+  "_comment": "Illustrative only — not a real McB tool. Delete this key along with mcbos.manifest.example.json once you've filled in your own mcbos.manifest.json.",
+  "tool": {
+    "name": "Example Fleet Scheduler",
+    "companies": ["OMW", "CEC"],
+    "category": "Equipment",
+    "description": "Schedules shared equipment across two operating companies and flags double-bookings.",
+    "owner": { "name": "Jordan Rivera", "role": "Fleet Coordinator" },
+    "url": "https://example-fleet-scheduler.mcb-apps.com",
+    "status": "in-development",
+    "progressPercent": 40
+  },
+  "connectsTo": [
+    {
+      "targetType": "system",
+      "targetName": "SQL Data Warehouse",
+      "label": "Nightly equipment-hours sync",
+      "status": "live"
+    },
+    {
+      "targetType": "tool",
+      "targetName": "FleetTrack",
+      "label": "Shares equipment location data",
+      "status": "planned"
+    }
+  ]
+}
