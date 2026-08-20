@@ -22,8 +22,15 @@ and are loaded automatically if you're using Claude Code:
 File	Covers
 `.claude/rules/azure-naming-standard.md`	How every Azure resource (resource groups, Data Factory, SQL, storage, Key Vault) must be named
 `.claude/rules/mcbos-pipeline-standards.md`	How data pipelines are structured, source-to-target mapping conventions, write behavior rules
+`mcbos-connections-manifest.md`	The `mcbos.manifest.json` schema every repo carries — your tool's McB OS catalog entry and what it connects to, filled in as you build
 If you're not using Claude Code, read the files directly at the paths
 above — they're the same standard either way.
+
+Also fill in `mcbos.manifest.json` at the repo root as you build (see
+`mcbos-connections-manifest.md` for the full field reference, and
+`mcbos.manifest.example.json` for a filled-in illustration). This is what
+lets McB OS pick up your tool's catalog entry and connections without an
+admin retyping them from scratch when it's time to connect your tool.
 Ground rules this template enforces
 Naming convention is not optional. Every Azure resource follows
 `<type>-mcbos-<component>-<env>`. See the naming standard file for
